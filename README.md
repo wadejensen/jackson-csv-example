@@ -1,3 +1,7 @@
+Example usage of the CSV frontend of faster.xml Jackson parsing.
+Uses Java 8 streams to lazily read and parse each row.
+
+
 ```
 $ git clone https://github.com/wadejensen/jackson-csv-example.git
 $ cd jackson-csv-example
@@ -13,7 +17,7 @@ everest, carmen, 55
 ```
 
 ```
-$ java -jar target/jackson-csv-example.jar /path/to/person.csv"
+$ java -jar target/jackson-csv-example.jar "/path/to/person.csv"
 
 Person{firstname='wade', lastname='jensen', age='22'}
 Person{firstname='elizabeth', lastname='gene', age='24'}
